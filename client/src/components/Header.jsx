@@ -43,7 +43,7 @@ const Header = () => {
         <p>Best Transform Words into Art</p>
         <img src={assets.star_icon} alt=''/>
       </motion.div>
-      <motion.h1 className='text-4xl max-w-[300px] sm:text-6xl sm:max-w-[590px] mx-auto mt-10 text-center'>Transform Words into <span className='text-red-600 font-bold'
+      <motion.h1 className='text-4xl max-w-[300px] sm:text-6xl sm:max-w-[590px] mx-auto mt-10 text-center'>Transform Words into <span className='text-pink-700 font-bold'
       initial={{opacity:0}}
       animate={{opacity:1}}
       transition={{delay:0.4,duration:2}}
@@ -73,7 +73,7 @@ const Header = () => {
             <motion.img
             whileHover={{scale:1.05, duration:0.1}}
             className='rounded hover:scale-105 transition-all duration-300 cursor-pointer max-sm:w-10'
-             src ={index % 2 ===0 ? assets.sample_img_2: assets.sample_img_1} alt='' key={index} width={70} />
+             src ={index % 2 ===0 ? assets.Cat: assets.Penguin} alt='' key={index} width={70} />
         ))}
       </motion.div>
 
@@ -81,7 +81,7 @@ const Header = () => {
       initial={{opacity:0}}
       animate={{opacity:1}}
       transition={{delay:1.2,duration:0.8}}
-      className='mt-2 text-neutral-600'>Generated images from ImageZ</motion.p>
+      className='mt-2 text-neutral-600'>Generated images from DreamFrame</motion.p>
     </motion.div>
   )
 }
